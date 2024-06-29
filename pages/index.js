@@ -1,3 +1,4 @@
+import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
@@ -11,6 +12,8 @@ function HomePage() {
         // backgroundColor: "red" 
     };
 
+    const [valorFiltro, setValorFiltro] = React.useState("");
+
     return (
         <>
             <CSSReset/>
@@ -19,9 +22,9 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1
             }}>
-                <Menu />
+                <Menu valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
                 <Header/>
-                <Timeline playlists={config.playlists} />
+                <Timeline valorFiltro={valorFiltro} playlists={config.playlists} />
             </div>
         </>
     );
@@ -46,7 +49,6 @@ const StyledHeader = styled.div`
     .user-info {
         display: flex;
         align-items: center;
-        margin-top: 50px;
         margin-left: 10px;
         width: 100%;
         padding: 16px 32px;
@@ -54,26 +56,33 @@ const StyledHeader = styled.div`
     }
 `;
 
+const StyledBanner = styled.div`
+    background-color: blue;
+    background-image: url(${config.bg});
+    height: 230px;
+`;
+
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner"/> */}
-            <section className="user-info">
-                <img src={`https://github.com/${config.github}.png`}/>
-                <div>
-                    <h2>
-                        {config.name}
-                    </h2>
-                    <p>
-                        {config.job}
-                    </p>
-                </div>
-            </section>
+            <StyledBanner bg={config.bg} />
+                {/* <img src="banner"/> */}
+                <section className="user-info">
+                    <img src={`https://github.com/${config.github}.png`}/>
+                    <div>
+                        <h2>
+                            {config.name}
+                        </h2>
+                        <p>
+                            {config.job}
+                        </p>
+                    </div>
+                </section>
         </StyledHeader>
     )
 }
 
-function Timeline(propriedades) {
+function Timeline( {valorFiltro, ...propriedades} ) {
 
     const playlistNames = Object.keys(propriedades.playlists);
 
@@ -84,12 +93,20 @@ function Timeline(propriedades) {
                 const videos = propriedades.playlists[playlistName];
 
                 return (
-                    <section>
+                    <section key={playlistName}>
                         <h2>{playlistName}</h2>
                         <div>
-                            {videos.map((video) => {
+                            {videos.filter((video) => {
+
+                                const titleNormalized = video.title.toLowerCase();
+                                const valorFiltroNormalized = valorFiltro.toLowerCase();
+
+                                // Retornar video com o tiulo que está sendo digitado no input de busca
+                                return titleNormalized.includes(valorFiltroNormalized);
+
+                            }).map((video) => {
                                 return (
-                                    <a href={video.url}>
+                                    <a href={video.url} key={video.url}>
                                         <img src={video.thumb} />
                                         <span>
                                             {video.title}
