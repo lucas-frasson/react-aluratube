@@ -6,14 +6,14 @@
     "playlists": {
         "jogos": [
             {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
-                "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
+                "title": "As Speedruns Mais LONGAS da HISTÓRIA!!!",
+                "url": "https://www.youtube.com/watch?v=ZLJ3sVwYHPY&t=596s",
+                "thumb": "https://i.ytimg.com/vi/ZLJ3sVwYHPY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAP1AxRqpExpeIH8RlkQfrV4aDX9g"
             },
             {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
-                "thumb": "https://img.youtube.com/vi/O8jtAyPuhNg/hqdefault.jpg"
+                "title": "Jogos para RELAXAR!",
+                "url": "https://www.youtube.com/watch?v=21lvCeOFvVc&list=LL&index=46&pp=gAQBiAQB",
+                "thumb": "https://i.ytimg.com/vi/21lvCeOFvVc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUL6hMrsOM4VbA2_OZ4nGgQsOjxw"
             }
         ],
         "front-end": [
@@ -35,14 +35,14 @@
         ],
         "back-end": [
             {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
-                "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
+                "title": "The Ultimate Web Developer Roadmap For 2024",
+                "url": "https://www.youtube.com/watch?v=Gc4Xh8u19NU&t=999s",
+                "thumb": "https://i.ytimg.com/vi/Gc4Xh8u19NU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDNedWQN2RidkXwFsAvBR9GgaTs6Q"
             },
             {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
-                "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
+                "title": "Criando Sistema Web usando NodeJS (TUTORIAL)",
+                "url": "https://www.youtube.com/watch?v=WXaCnEatnGg",
+                "thumb": "https://i.ytimg.com/vi/WXaCnEatnGg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBY7mVEai0K9crQimuqiNoEXezCvA"
             }
         ]
     }
