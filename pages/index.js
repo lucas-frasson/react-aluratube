@@ -109,7 +109,7 @@ function Timeline( {valorFiltro, ...propriedades} ) {
 
                 return (
                     <section key={playlistName}>
-                        <h2>{playlistName}</h2>
+                        <h2>Meus vídeos favoritos</h2>
                         <div>
                             {videos.filter((video) => {
 
